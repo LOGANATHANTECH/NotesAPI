@@ -3,7 +3,6 @@ const bodyparser=require('body-parser');
 
 const express = require('express');
 const app= express();
-
 app.use("/login",bodyparser.urlencoded());
 
 // app.use((req,res,next)=>{
@@ -16,6 +15,7 @@ app.use("/login",bodyparser.urlencoded());
 //     res.send("<h1>express is running loganathan !</h1>");
 //     // res.end();
 // });
+// logu
 
 app.post("/login",(req,res)=>{
     const userdata=req.body
