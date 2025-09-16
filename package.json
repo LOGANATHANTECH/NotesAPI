@@ -1,0 +1,30 @@
+{
+  "name": "noteapi",
+  "version": "1.0.0",
+  "description": "node api working practice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOGANATHANTECH/NotesAPI.git"
+  },
+  "keywords": [
+    "logu"
+  ],
+  "author": "loganathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LOGANATHANTECH/NotesAPI/issues"
+  },
+  "homepage": "https://github.com/LOGANATHANTECH/NotesAPI#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "nodemon": "^3.1.10"
+  }
+}
