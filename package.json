@@ -23,7 +23,6 @@
   "dependencies": {
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
-    "http": "^0.0.1-security",
     "lodash": "^4.17.21",
     "nodemon": "^3.1.10"
   }
