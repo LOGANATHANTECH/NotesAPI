@@ -120,5 +120,8 @@ Built with Node.js and Express.js.
 ---
 
 ## Installation
-
+```
 1. Clone the repository:  
+2. npm i  
+2. npm start  
+```
