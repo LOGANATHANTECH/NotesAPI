@@ -4,6 +4,7 @@ const notes = [];
 const bodyParser = require('body-parser');
 const { parseInt } = require('lodash');
 
+
 router.use("/", bodyParser.json())
 
 router.get('/', (req, res) => {
@@ -51,14 +52,12 @@ router.put('/', (req, res) => {
     const propertyCount = Object.keys(newNote).length;
 
     if (newNote && (propertyCount < 4 && propertyCount > 0) && ((newNote.title || newNote.content) && newNote.id)) {
-
+       
         if (newNote.id < notes.length + 1) {
-
             const oldValue = notes.find((element) => { return element.id == newNote.id });
+           
             if (oldValue.id) {
-
-
-
+                
                 if (newNote.title) {
                     console.log(newNote.title);
 
@@ -68,17 +67,13 @@ router.put('/', (req, res) => {
                 }
                 oldValue.title = newNote.title
                 notes[oldValue.id - 1] = oldValue
-
-
                 res.send("note updated (-_-)");
             }else{
                 return res.status(204).send({"message":"you update after delete"});
             }
-
         } else {
             return res.status(404).send({ "message": "id not found !" });
         }
-
     } else {
         return res.status(400).send({ "message": " title or content is required with id !" });
     }
